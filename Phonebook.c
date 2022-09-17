@@ -21,27 +21,42 @@ int main(void)
       switch (choice3)
         {
           case 1:
-            //Case 1 code
+            //Case 1 Code
+            printf("------------------------------------------------\n")
+            printf("View Contacts")
+            printf("------------------------------------------------\n")
           break;
 
           case 2:
-            //Case 2 code
+            //Case 2 Code
+            printf("------------------------------------------------\n")
+            printf("Add Contacts")
+            printf("------------------------------------------------\n")
+          break;
+        
+          case 3:
+            //Case 3 Code
+            printf("------------------------------------------------\n");
+            printf("Edit Contacts\n");
+            printf("------------------------------------------------\n");
           break;
 
-          case 3:
+          case 4:
+            //Case 4 Code
             printf("------------------------------------------------\n");
             printf("Exiting Program\n");
             printf("------------------------------------------------\n");
           break;
         }
-    } while (choice3 != 3);
+    } while (choice3 != 4);
 }
 
 void printMenu()
   {
-    printf("Option 1 - \n");
-    printf("Option 2 - \n");
-    printf("Option 3 - \n");
+    printf("Option 1 - View Contacts\n");
+    printf("Option 2 - Add Contacts\n");
+    printf("Option 3 - Edit Contacts\n");
+    printf("Option 4 - Exit Program\n")
     printf("Please make your choice\n");
   }
 
