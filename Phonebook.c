@@ -22,16 +22,16 @@ int main(void)
         {
           case 1:
             //Case 1 Code
-            printf("------------------------------------------------\n")
-            printf("View Contacts")
-            printf("------------------------------------------------\n")
+            printf("------------------------------------------------\n");
+            printf("View Contacts\n");
+            printf("------------------------------------------------\n");
           break;
 
           case 2:
             //Case 2 Code
-            printf("------------------------------------------------\n")
-            printf("Add Contacts")
-            printf("------------------------------------------------\n")
+            printf("------------------------------------------------\n");
+            printf("Add Contacts\n");
+            printf("------------------------------------------------\n");
           break;
         
           case 3:
@@ -56,7 +56,7 @@ void printMenu()
     printf("Option 1 - View Contacts\n");
     printf("Option 2 - Add Contacts\n");
     printf("Option 3 - Edit Contacts\n");
-    printf("Option 4 - Exit Program\n")
+    printf("Option 4 - Exit Program\n");
     printf("Please make your choice\n");
   }
 
