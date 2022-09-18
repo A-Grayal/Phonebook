@@ -21,7 +21,6 @@ int main(void)
       exit(1);
     }
 
-
     //Menu Functions
     int choice1;
     int choice2;
@@ -45,7 +44,29 @@ int main(void)
             //Case 2 Code
             printf("------------------------------------------------\n");
             printf("Add Contacts\n");
-            printf("------------------------------------------------\n");
+            printf("------------------------------------------------\n"); 
+            
+            printf("Please enter first Name:\n");
+            printf("Please enter Surname\n");
+            printf("Please enter Phone Number\n");
+
+            if(fgets(buffer,MAX_SIZE,stdin) == NULL)
+            {
+              printf("Error in reading the input data\n");
+              //close the file
+              fclose(fp);
+              exit(1);
+            }
+
+            //Write the buffer in file
+            fwrite(buffer, sizeof(buffer[0]), MAX_SIZE, fp);
+
+            //close the file
+            fclose(fp);
+            printf("File has been created and saved successfully\n");
+
+            return 0;
+
           break;
         
           case 3:
