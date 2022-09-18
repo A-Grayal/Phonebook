@@ -8,6 +8,19 @@ void printMenu();
 
 int main(void) 
 {
+    //File Pointer
+    FILE *fp = NULL;
+    char buffer[MAX_SIZE] = (0);
+
+    //Create File
+    fp = fopen("phonebookDetails.txt", "w");
+    if(fp == NULL)
+    {
+      printf("Error creating file\n");
+      exit(1);
+    }
+
+
     //Menu Functions
     int choice1;
     int choice2;
