@@ -5,12 +5,13 @@ void printMenu();
 
 //variables
 
+#define MAX_SIZE 200
 
 int main(void) 
 {
     //File Pointer
     FILE *fp = NULL;
-    char buffer[MAX_SIZE] = (0);
+    char buffer[MAX_SIZE] = {0};
 
     //Create File
     fp = fopen("phonebookDetails.txt", "w");
